@@ -26,7 +26,7 @@ class App extends React.Component{
                 city: data.name,
                 country: data.sys.country,
                 Temperature: data.main.temp+" deg",
-                Humidity : data.main.humidity,
+                Humidity : data.main.humidity+" %",
                 error: undefined
                 });
         }
