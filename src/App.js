@@ -20,7 +20,7 @@ class App extends React.Component{
         const apiKey="aa09d6942d41db20a6eeaf6dbcd1071c";
         const apiCall= await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${apiKey}&units=metric`);
         const data=await apiCall.json();
-        console.log(data);
+        // console.log(data);
         if(data.message!="city not found" && city && country){
             this.setState({
                 city: data.name,
